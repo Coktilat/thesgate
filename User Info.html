@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/countrySelect.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard">
+    <div class="se-pre-con"></div>
+    <section class="head_dash">
+        <div class="img_head_dash">
+            <img src="images/Text.png">
+        </div>
+        <div class="user_head_dash">
+            <ul>
+                <li><a href="#" class="active"><img src="images/Group 625.png"></a></li>
+                <!-- <li><a href="#"><img src="images/Search.png"></a></li> -->
+                <!-- <li><a href="#"><img src="images/Settings.png"></a></li> -->
+                <li><a href="User Info.html"><img src="images/Icon_user.png"> أهلاً وسهلاً , .. <span>عيسى</span></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="main_cont">
+        <div class="side_main">
+            <div class="img_logo_siman">
+                <img src="images/Sympol.png">
+            </div>
+            <ul>
+                <li>
+                    <a href="User Dashboard.html">
+                        <img src="images/index.png">
+                        <span>الرئيسة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="My Practices.html">
+                        <img src="images/Trainings.png">
+                        <span>تدريباتي</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="My Tests.html">
+                        <img src="images/Group 647.png">
+                        <span>امتحاناتي</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Certifications.html">
+                        <img src="images/Group 44.png">
+                        <span>شهاداتي</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="User Info.html" class="active">
+                        <img src="images/Group 295.png">
+                        <span>معلوماتي</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Fave.html">
+                        <img src="images/Group 50.png">
+                        <span>مفضلتي</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Archive.html">
+                        <img src="images/Group 826.png">
+                        <span>الأرشيف</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Group 814.png">
+                        <span>الدعم الفني</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Group 638.png">
+                        <span>خروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="info_prof">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info_user_img">
+                            <div class="img_iui">
+                                <div class="img_iusi">
+                                    <img id="blah" src="images/Mask Group 8.png">
+                                </div>
+                                <input type='file' id="imgInp" />
+                                <label for="imgInp"><i class="fa fa-pencil-square-o"></i></label>
+                            </div>
+                            <h3>عيسى ىابراهيم </h3>
+                            <p>isabaro@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="info_user_txt">
+                            <h3>معـلومــاتـــي</h3>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                            <div class="inputs_iut">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>الاسم الكامل</label>
+                                            <input type="text" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>اسم المستخدم <span>الاسم الظاهر في الموقع</span></label>
+                                            <input type="text" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>كلمة المرور</label>
+                                            <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#update_pass"></i>
+                                            <input type="password" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>تاريخ الميلاد</label>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <input type="text" class="datepicker" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>الدولة</label>
+                                            <input type="text" class="country"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>المدينة</label>
+                                            <input type="text" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>الدرجة العلمية</label>
+                                            <select class="selectpicker">
+                                                <option>الدرجة العلمية</option>
+                                                <option value="1">الدرجة العلمية</option>
+                                                <option value="2">الدرجة العلمية</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>التخصص</label>
+                                            <input type="text" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>البريد اللكتروني</label>
+                                            <input type="text" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputs_f_iut">
+                                            <label>رقم الجوال</label>
+                                            <input type="text" name="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 pull-left">
+                                        <div class="inputs_f_iut">
+                                            <button>حــفـــظ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer_con">
+                        <h3>جميع الحقوق محفوظة © 2019</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer_con">
+                        <img src="images/Group 538.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer_con">
+                        <ul>
+                            <li>
+                                <a href="#">شروط الاستخدام</a>
+                            </li>
+                            <li>
+                                <a href="#">سياسة الخصوصية </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="update_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal_is upd_pas">
+                        <h3>تغيير كلمة المرور</h3>
+                        <p>تأكد أنك تختار كلمة مرور قوية لكي لا تتعرض لعملية الاختراق، كلمة المرور القوية تتكون من احرف وأرقام ورموز</p>
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="ul_modal">
+                            <div class="con_modal_tab">
+                                <div class="con_modal_ctab active tabs_1">
+                                    <div class="inputs_f_iut">
+                                        <label>كلمة المرور الحلية</label>
+                                        <input type="password" name="" placeholder="">
+                                    </div>
+                                    <div class="inputs_f_iut">
+                                        <label>كلمة المرور الجديدة</label>
+                                        <input type="password" name="" placeholder="">
+                                    </div>
+                                    <div class="inputs_f_iut">
+                                        <label>تأكيد كلمة المرور</label>
+                                        <input type="password" name="" placeholder="">
+                                    </div>
+                                    <div class="check_google">
+                                        <div id="rec_div"></div>
+                                    </div>
+                                    <button>تغيير</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/countrypicker.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/countrySelect.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script>
+      $(".country").countrySelect();
+      $('.datepicker').datepicker({
+        format:'dd/mm/yyyy'
+      });
+    </script>
+
+    <script src="js/function.js"></script>
+</body>
+</html>
