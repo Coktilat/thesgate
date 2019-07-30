@@ -78,9 +78,14 @@ var header = document.getElementById("myHeader");
       // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
       function myFunction() {
         if (window.pageYOffset > sticky) {
+          $('.header-section').find('.menu_logo').find('img').attr('src' , 'images/Logo_w.png');
           header.classList.add("sticky");
           $('.header-section').addClass('single_header');
         } else {
+          var chek = $('.header-section').hasClass('main_hea_index');
+          if(chek){
+            $('.header-section').find('.menu_logo').find('img').attr('src' , 'images/Logo.png');
+          }
           header.classList.remove("sticky");
           $('.header-section').removeClass('single_header');
 
@@ -119,10 +124,14 @@ $(document).ready(function() {
       });
   });
   $(".add_to_fiv").click(function(){
+    if(!$(this).hasClass('active')){
+      $(this).addClass('active');
+      $(this).find('i').removeClass('far').addClass('fas');
       toastr.success("تمت الاضافة بنجاح", {
           "timeOut": "0",
           "extendedTImeout": "0"
       });
+    }
   });
   $(".add_to_archive").click(function(){
       toastr.success("تمت الاضافة بنجاح", {
@@ -461,7 +470,7 @@ $(document).ready(function() {
         livst.trigger('prev.owl.carousel');
     });
     $('.prev_visitor').click(function() {
-        livst.trigger('prev.owl.carousel');
+        livst.trigger('next.owl.carousel');
     });
     livst.on('changed.owl.carousel', function(event) {
       $('.list_images_visitor').find('.item_iv.active').removeClass('active');
