@@ -1,3 +1,5 @@
+
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -499,5 +501,17 @@ $(document).ready(function() {
   function OC_Menu() {
     $('.mobile_menu').toggleClass('active').fadeIn();
   }
+
+});
+
+$(function() {
+  var stat = $('.stat').height();
+  var screensize = document.documentElement.clientWidth;
+  if (screensize  > 1366) {
+    $.scrollify({
+      section : ".sec_smoth",
+    });
+  }
+  console.log(stat);
 
 });

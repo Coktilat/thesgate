@@ -36,6 +36,7 @@ a{text-decoration: none !important}
 *{outline: none !important; line-height: auto !important}
 
 /*----------------------- body-home ---------------------- */
+
 body {
     font-family: 'Cairo', sans-serif;
     /*font-family: 'Changa', sans-serif;*/
@@ -636,7 +637,12 @@ section{
     margin: 20px 0 0;
 }
 .aboutus{
-    padding: 100px 0 130px;
+    padding: 100px 0 100px;
+}
+.main_stat {
+    float: right;
+    width: 100%;
+    margin-bottom: 7%;
 }
 .aboutcon{
     float: left;
@@ -1659,7 +1665,7 @@ a{
     width: 135px;
 }
 .contact{
-    padding: 120px 0 100px;
+    /*padding: 120px 0 100px;*/
 }
 .con_contacts{
     float: left;
@@ -1766,6 +1772,7 @@ a{
     float: right;
     width: 100%;
     padding: 25px 0 20px;
+    height: auto !important;
     background: rgb(120,135,194);
     background: -moz-linear-gradient(180deg,  rgba(120,135,194,1) 40%,rgba(99,201,237,1) 130%);
     background: -webkit-linear-gradient(180deg,  rgba(120,135,194,1) 40%,rgba(99,201,237,1) 130%);
@@ -4930,6 +4937,42 @@ li.country{
     }
 }
 
+@media screen and (max-width: 1366px){
+    .item_header{
+        margin: 12% 0 5%;
+    }
+    .owl_links{
+        margin-top: 0;
+    }
+    .nav_men .win,
+    .nav_men span a{
+        margin-right: 20px;
+    }
+    .nav_men{
+        right: -125px;
+    }
+    .txt_less h3{
+        font-size: 18px;
+    }
+    .txt_less p{
+        font-size: 14px;
+    }
+    .txt_less span{
+        font-size: 26px;
+    }
+    .txt_less span span {
+        font-size: 12px;
+    }
+    .nav_men.ref {
+        right: -145px;
+    }
+    .contact {
+        padding: 120px 0 100px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+}
 @media screen and (max-width: 1200px){
     .result{
         padding-left: 200px;
